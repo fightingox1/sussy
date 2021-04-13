@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+When the imposter is SUS
+  </title>
+<link rel="icon" href="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/231/among-us-player-red-512.png">
+</head>
+<style>
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
+#clock {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  width: 100%;
+  height: 14%;
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+</style>
+<body>
+ <div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="https://drive.google.com/uc?export=download&id=1_U-_Yw0VTS-KjBjaVzXdJmwfSPF8wBx-" type="video/mp4">
+    </video>
+</div>
+ <audio autoplay loop>
+      <source src="https://fightingox1.github.io/sussy/Song.mp3">
+</audio>
+<div id='clock'> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=large&timezone=America%2FNew_York" width="30%" height="140" frameborder="0" seamless></iframe> </div>
+</body>
+</html>
